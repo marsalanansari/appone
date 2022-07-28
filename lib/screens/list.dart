@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:tailerapp/wig/listmenu.dart';
 
 class ListItem extends StatelessWidget {
   const ListItem({Key? key}) : super(key: key);
@@ -55,37 +56,14 @@ class ListItem extends StatelessWidget {
           Expanded(
             child: ListView(
               children: [
-                Container(
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    decoration: BoxDecoration(color: Colors.amber),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Image.asset(
-                          'assets/list1.png',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Text('this is text one'),
-                        Text('this is text two'),
-                      ],
-                    )),
-                    SizedBox(height: 10,),
-                    Container(
-                    margin: EdgeInsets.only(top: 30),
-                    decoration: BoxDecoration(color: Colors.amber),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Image.asset(
-                          'assets/list1.png',
-                          width: 50,
-                          height: 50,
-                        ),
-                        Text('this is text one'),
-                        Text('this is text two'),
-                      ],
-                    ))
+                listCard('assets/list1.png', 'Hawaian Shirt', ' 25.99'),
+                listCard('assets/list2.png', 'Hawaian Shirt', ' 25.99'),
+                listCard('assets/list3.png', 'Hawaian Shirt', ' 25.99'),
+                listCard('assets/list4.png', 'Hawaian Shirt', ' 25.99'),
+                listCard('assets/list1.png', 'Hawaian Shirt', ' 25.99'),
+                listCard('assets/list2.png', 'Hawaian Shirt', ' 25.99'),
+                listCard('assets/list3.png', 'Hawaian Shirt', ' 25.99'),
+                listCard('assets/list4.png', 'Hawaian Shirt', ' 25.99'),
               ],
             ),
           )
